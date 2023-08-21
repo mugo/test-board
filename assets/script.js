@@ -176,22 +176,22 @@ submitBtn.addEventListener("click", function () {
     } 
     else if(currentQuestion < test.length || score >= 90) {
       testDiv.innerHTML = `<h2>You've scored <span style="color:#019AA8">${score}/100 Pts</span></h2>
-      <p style="margin-top: 3rem;font-weight: 600;">You must be a Javascript Guru!</p>
+      <p style="margin-top: 3rem;font-weight: 600;">You seem quite knowledgeable in JavaScript!</p>
           <button class="reload-btn"  onClick ="location.reload()">Reload</button>`;
     } 
     else if(currentQuestion < test.length && score < 80 || score >= 60) {
       testDiv.innerHTML = `<h2>You've scored <span style="color: #019AA8">${score}/100 Pts</span></h2>
-      <p style="margin-top: 3rem;font-weight: 600;">Focus on the code!</p>
+      <p style="margin-top: 3rem;font-weight: 600;">Direct more attention to the code!</p>
       <button class="reload-btn" "style="width: 5rem" onClick ="location.reload()">Reload</button>`;
     } 
     else if(currentQuestion < test.length && score < 50 || score >= 20) {
       testDiv.innerHTML = `<h2>You've scored <span style="color:#019AA8">${score}/100 Pts</span></h2>
-      <p style="margin-top: 3rem;font-weight: 600;">You can do better!</p>
+      <p style="margin-top: 3rem;font-weight: 600;">There's room for improvement!</p>
       <button class="reload-btn" "style="width: 5rem" onClick ="location.reload()">Reload</button>`;
     }
     else {
       testDiv.innerHTML = `<h2>You've scored <span style="color:#019AA8">${score}/100 Pts</span></h2>
-      <p style="margin-top: 3rem;font-weight: 600;">Keep Practicing!</p>
+      <p style="margin-top: 3rem;font-weight: 600;">Continue honing your skills through practice!</p>
       <button class="reload-btn" "style="width: 5rem" onClick ="location.reload()">Reload</button>`;
     }
   }
